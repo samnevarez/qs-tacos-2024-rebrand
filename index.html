@@ -3,7 +3,7 @@
 
 <head>
   
-<title>Sam Nevarez | UX/UI & Product Designer</title>
+<title>Welcome to Q's Tacos Food Truck</title>
 
 <!-- fonts start-->
 
@@ -166,7 +166,74 @@
           <p>Stay up to date with our feed!</p>
         </div>
         <div class="row">
-          <div id="instafeed-container"></div>
+            <div id="instagram-feed" class="instagram-feed"></div>
+
+            <!-- <script>
+                const accessToken = 'IGQWRQWnZAUUHBJTlBvVEZAVbC1SQlNXTkdJN0lJOVJiMGVRcE5vTXBPYng4OTlwcEpGdnVjaVB1U2o1UFhQenlRLWYxODVyUWFmazY4UU4xR2F5TVBlM2hIYmpESnhJQkl1ZAE42RTh2NFZASTkxYWGgwT3JwVm80WXMZD';
+                const userId = '7885580701500585'; // Optional, if you want to fetch specific user posts
+        
+                fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${accessToken}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const feed = document.getElementById('instagram-feed');
+                        data.data.forEach(post => {
+                            if (post.media_type === 'IMAGE' || post.media_type === 'CAROUSEL_ALBUM') {
+                                const img = document.createElement('img');
+                                img.src = post.media_url;
+                                img.alt = post.caption || '';
+                                feed.appendChild(img);
+                            }
+                        });
+                    })
+                    .catch(error => console.error('Error fetching Instagram feed:', error));
+            </script> -->
+
+            <script>
+              const accessToken = 'IGQWRQWnZAUUHBJTlBvVEZAVbC1SQlNXTkdJN0lJOVJiMGVRcE5vTXBPYng4OTlwcEpGdnVjaVB1U2o1UFhQenlRLWYxODVyUWFmazY4UU4xR2F5TVBlM2hIYmpESnhJQkl1ZAE42RTh2NFZASTkxYWGgwT3JwVm80WXMZD';
+              const userId = '7885580701500585'; // Optional, if you want to fetch specific user posts
+      
+              let currentPage = 0;
+              const pageSizeDesktop = 8;
+              const pageSizeMobile = 6;
+      
+              function getPageSize() {
+                  return window.innerWidth <= 768 ? pageSizeMobile : pageSizeDesktop;
+              }
+      
+              function loadImages(data, startIndex, count) {
+                  const feed = document.getElementById('instagram-feed');
+                  const endIndex = Math.min(startIndex + count, data.length);
+                  for (let i = startIndex; i < endIndex; i++) {
+                      const post = data[i];
+                      if (post.media_type === 'IMAGE' || post.media_type === 'CAROUSEL_ALBUM') {
+                          const img = document.createElement('img');
+                          img.src = post.media_url;
+                          img.alt = post.caption || '';
+                          img.onload = () => img.classList.add('loaded');
+                          feed.appendChild(img);
+                      }
+                  }
+              }
+      
+              fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${accessToken}`)
+                  .then(response => response.json())
+                  .then(data => {
+                      const loadMoreButton = document.getElementById('load-more');
+                      const pageSize = getPageSize();
+      
+                      loadImages(data.data, currentPage * pageSize, pageSize);
+      
+                      loadMoreButton.addEventListener('click', () => {
+                          currentPage++;
+                          loadImages(data.data, currentPage * pageSize, pageSize);
+                          if ((currentPage + 1) * pageSize >= data.data.length) {
+                              loadMoreButton.style.display = 'none';
+                          }
+                      });
+                  })
+                  .catch(error => console.error('Error fetching Instagram feed:', error));
+          </script>
+              <div id="load-more" class="load-more btn-primary">Load More</div>
         </div>
     </section>
     <!-- END -- instafeed -->

@@ -1,5 +1,5 @@
 # Ignore node_modules directory
-# node_modules/
+node_modules/
 
 # Ignore log files
 *.log
@@ -14,5 +14,4 @@ build/
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
-# node_modules/
-
+node_modules
