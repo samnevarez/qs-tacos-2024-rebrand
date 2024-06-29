@@ -168,28 +168,9 @@
         <div class="row">
             <div id="instagram-feed" class="instagram-feed"></div>
 
-            <!-- <script>
-                const accessToken = 'IGQWRQWnZAUUHBJTlBvVEZAVbC1SQlNXTkdJN0lJOVJiMGVRcE5vTXBPYng4OTlwcEpGdnVjaVB1U2o1UFhQenlRLWYxODVyUWFmazY4UU4xR2F5TVBlM2hIYmpESnhJQkl1ZAE42RTh2NFZASTkxYWGgwT3JwVm80WXMZD';
-                const userId = '7885580701500585'; // Optional, if you want to fetch specific user posts
-        
-                fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${accessToken}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        const feed = document.getElementById('instagram-feed');
-                        data.data.forEach(post => {
-                            if (post.media_type === 'IMAGE' || post.media_type === 'CAROUSEL_ALBUM') {
-                                const img = document.createElement('img');
-                                img.src = post.media_url;
-                                img.alt = post.caption || '';
-                                feed.appendChild(img);
-                            }
-                        });
-                    })
-                    .catch(error => console.error('Error fetching Instagram feed:', error));
-            </script> -->
-
+            <!-- Instagram Feed! -->
             <script>
-              const accessToken = 'IGQWRQWnZAUUHBJTlBvVEZAVbC1SQlNXTkdJN0lJOVJiMGVRcE5vTXBPYng4OTlwcEpGdnVjaVB1U2o1UFhQenlRLWYxODVyUWFmazY4UU4xR2F5TVBlM2hIYmpESnhJQkl1ZAE42RTh2NFZASTkxYWGgwT3JwVm80WXMZD';
+              const accessToken = 'IGQWRNb01EdnNJem80UGN2TWNPTnZASekF6SWJ5WTNBeTd0ZATlqbzA2ekgyU0V2V1JmVG1rRE5Gek1XWnExYlhRdVRJcXFLNElpY1ZAhZAC1MbTFPdFJxb1FrUDVhX3RUTUN4RlBLLXZAUM09fb2NzUmFLZAUcyYS1DNVUZD';
               const userId = '7885580701500585'; // Optional, if you want to fetch specific user posts
       
               let currentPage = 0;
@@ -214,7 +195,7 @@
                       }
                   }
               }
-      
+
               fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${accessToken}`)
                   .then(response => response.json())
                   .then(data => {
@@ -233,6 +214,9 @@
                   })
                   .catch(error => console.error('Error fetching Instagram feed:', error));
           </script>
+          
+          <!-- Instagram Feed! -->
+
               <div id="load-more" class="load-more btn-primary">Load More</div>
         </div>
     </section>
