@@ -1859,49 +1859,33 @@ section {
   color: #fff;
 }
 
-#instafeed-container {
-  margin: 0 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
-}
-
-#instafeed-container a {
-  display: block;
-}
-
-#instafeed-container img {
-  display: block;
-  width: 100%;
-}
-
 .instagram-feed {
+  padding: 0 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 16px;
 }
-.instagram-feed img {
+
+.instagram-item {
+  position: relative; /* Ensure each item in the feed is positioned relative for hover effects */
+}
+
+.instagram-item img {
   border-radius: 16px;
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  opacity: 0;
+  opacity: 1; /* Change from 0 to 1 for the initial state */
   transition: opacity 0.5s ease-in-out;
 }
-.instagram-feed img.loaded {
-  opacity: 1;
+
+.instagram-item:hover img {
+  opacity: 0.8; /* Example hover effect */
 }
+
 @media (max-width: 768px) {
   .instagram-feed {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-}
-.load-more {
-  display: block;
-  text-align: center;
-  margin: 32px auto 0 auto;
-  cursor: pointer;
 }
