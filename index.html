@@ -84,16 +84,6 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-<!--   <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex">
-      <div class="contact-info mr-auto">
-        <i class="icofont-phone"><a href="tel:714-679-1587">(714) 679-1587‬</a></i> 
-        <span class="d-none d-lg-inline-block"><i class="icofont-clock-time icofont-rotate-180"></i></span>
-      </div>
-    </div>
-  </div> -->
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top dsbc">
     <div class="container d-flex align-items-center">
@@ -105,12 +95,12 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#why-us">Catering</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="book-a-table text-center"><a href="tel:(714) 679-1587">(714) 679-1587</a></li>
+          <li><a class="menu-nav-item" href="#about">About</a></li>
+          <li><a class="menu-nav-item" href="#menu">Menu</a></li>
+          <li><a class="menu-nav-item" href="#why-us">Catering</a></li>
+          <!-- <li><a class="menu-nav-item" href="#gallery">Gallery</a></li> -->
+          <li><a class="menu-nav-item" href="#contact">Contact</a></li>
+          <li><a class="menu-nav-item btn-primary" href="tel:(714) 679-1587">(714) 679-1587</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -118,16 +108,15 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center" data-aos="zoom-in" data-aos-delay="50">
+  <section id="hero" class="d-flex">
+    <div class="container position-relative text-center d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-delay="50">
       <div class="row">
         <div class="col-lg-12">
           <img src="img/qstacos_logo_sombrero-full.svg" alt="">
-          <h1>Food Truck</h1>
 
           <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <a href="#menu" target="_blank"><button class="btn-primary">View Menu</button></a>
+            <div class="col-lg-12 d-flex justify-content-center ecmt-8 ecmt-m-0">
+              <a href="#menu" class="btn-primary fadeInUp scrollto">View Our Menu</a>
             </div>
           </div>
         </div>
@@ -140,94 +129,41 @@
   </section><!-- End Hero -->
 
   <main id="main">
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about lsbc">
-      <div class="container" data-aos="fade-up">
-
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title ecmb-8">
+          <h2>About Us</h2>
+          <h3>Family Owned</h3>
+        </div>
         <div class="row">
-          <div class="col-lg-4 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="img/about-qstacos-family.png" alt="">
-            </div>
+          <div class="col-lg-4 about-img ecmt-m-8 order-lg-2">
+            <img src="img/about-qstacos-family.png" alt="Q’s Tacos family photo">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>About Q's Tacos</h3>
+          <div class="col-lg-8 ecmt-0 ecpr-4 content">
             <p>
-              Q’s Tacos was established in early 2016 as a food trailer with the vision of creating fresh mexican food with a twist. We believe food is love and love is food which brings people together and we are passionate about creating that in our food truck with fresh ingredients.
+            Welcome to Q’s Tacos! Since 2016, we've been serving fresh Mexican food with a unique twist from our beloved food trailer. We believe that food is love, and we pour our hearts into every dish. Using only the freshest ingredients, we create meals that bring people together and spread joy. Come join us and taste the passion we put into every taco!
             </p>
           </div>
         </div>
+        </div>      
       </div>
     </section><!-- End About Section -->
 
-    <!-- START -- instafeed -->
-    <section id="about lsbc" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6 section-title">
-            <h2>Follow us on Instagram</h2>
-            <p>Stay up to date with our feed!</p>
-          </div>
-          <div class="col-lg-6 d-flex justify-content-end align-items-center">
-            <a href="https://www.instagram.com/qstacos/" target="_blank"><button class="btn-primary"><i class="align-items-center fa-brands fa-instagram"></i> Follow us!</button></a>
-          </div>
-          </div>
-        <div class="row">
-          <div id="instagram-feed" class="instagram-feed">
-            <!-- Instagram Feed -->
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-01.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-02.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-03.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-04.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-05.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-06.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-07.png" alt="QsTacos Instagram">
-            </div>
-            <div class="instagram-item">
-              <img src="img/instagram-gallery/instagram-08.png" alt="QsTacos Instagram">
-            </div>
-            <!-- End Instagram Feed -->
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- END -- instafeed -->
+    <!-- ======= Catering ======= -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us dsbc">
+    <section id="why-us" class="why-us dsbc ecp-0 ecpy-24">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title ecmb-8">
           <h2>Catering</h2>
           <p>We would Love to Cater your Event</p>
         </div>
 
-        <div class="ecmb-8">
-          <div class="row justify-content-center">
-          <p class="col-lg-8 text-center">
-              We provide plates, napkins, and forks. For serving out of the foodtruck, our pricing is as followed:
-            </p>
-            <p class="col-lg-8 text-center">One plate per person.</p>
-          </div>
-        </div>
+        <div class="row ecmb-8">
 
-        <div class="row">
-
-          <div class="col-lg-4">
+          <div class="col-lg-4 ecmb-m-6">
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <span>1</span>
               <!-- <h4>$10.99</h4> -->
@@ -235,7 +171,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 ecmb-m-6">
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <span>2</span>
               <!-- <h4>$13.99</h4> -->
@@ -250,16 +186,26 @@
               <p>3 item menu for guests to chose from, one plate per person</p>
             </div>
           </div>
-
         </div>
 
         <div class="ecmt-8">
           <div class="row justify-content-center">
-            <p class="col-lg-8 text-center">
+            <p class="col-lg-10 text-center">
               We require a 50% deposit to reserve the date and the last payment on or before the catering date. All prices do not include tax. Custom orders are accepted. Travel fee will be included depending on location. We look forward to catering your event!
             </p>
           </div>
         </div>
+
+
+          <div class="row justify-content-center flex ecpt-4">
+          <p class="col-lg-12 text-center">
+            <strong class="dstc ecp-1"><i>One plate per person</i></strong> We provide plates, napkins, and forks. Served from foodtruck.
+            </p>
+            <div class="d-block ecpt-8">
+              <a class="menu-nav-item btn-primary" href="#get-estimate">Get Estimate!</a>
+            </div>
+          </div>
+
 
       </div>
     </section>
@@ -267,241 +213,187 @@
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu section-bg lsbc">
       <div class="container" data-aos="fade-up">
-        <div class="row">
+        <div class="row ecmb-4">
         <div class="col-lg-6 section-title">
           <h2>Menu</h2>
-          <p>Check out our Menu</p>
-        </div>
-        <div class="col-lg-6 d-flex justify-content-end align-items-center">
-          <a href="tel:(714) 679-1587"><button class="btn-primary">(714) 679-1587</button></a>
+          <p>Take a look around!</p>
         </div>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
+        <div class="row ecmb-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" class="filter-active">Show All</li>
               <li data-filter=".filter-tacos">Tacos</li>
               <li data-filter=".filter-burritos">Burritos</li>
               <li data-filter=".filter-bowls">Bowls</li>
               <li data-filter=".filter-nachos">Nachos</li>
               <li data-filter=".filter-fries">Fries</li>
-              <li data-filter=".filter-other">Other</li>
+              <li data-filter=".filter-quesadilla">Quesadilla</li>
             </ul>
           </div>
         </div>
 
         <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-6 menu-item filter-tacos">
-            <img src="img/menu/3-street-tacos.png" class="menu-img" alt="">
+          <div class="col-lg-3 col-md-6 menu-item filter-tacos">
+            <img src="/img/menu-img/01-3-tacos.png" class="menu-img" alt="Three tacos with choice of meat">
             <div class="menu-content">
-              3 Street Tacos
+              3 Tacos
             </div>
             <div class="menu-ingredients">
-              Fresh grilled lobster topped with cabbage/pico de gallo mix on corn tortillas
+              Your choice of meat topped with fresh-cut onions and cilantro on corn tortillas
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-tacos">
-            <img src="img/menu/6-street-tacos.png" class="menu-img" alt="">
+          
+          <div class="col-lg-3 col-md-6 menu-item filter-nachos">
+            <img src="/img/menu-img/02-loaded-nachos.png" class="menu-img" alt="Loaded nachos with choice of meat">
             <div class="menu-content">
-              6 Street Tacos
+              Loaded Nachos
             </div>
             <div class="menu-ingredients">
-              Fresh grilled lobster topped with cabbage/pico de gallo mix on corn tortillas
+              Your choice of meat with white queso cheese, beans, avocado sauce, fresh-cut onions, and cilantro on a bed of tortilla chips
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-tacos">
-            <img src="img/menu/3-lobster-tacos.png" class="menu-img" alt="">
+          
+          <div class="col-lg-3 col-md-6 menu-item filter-fries">
+            <img src="/img/menu-img/03-loaded-fries.png" class="menu-img" alt="Burrito bowl with choice of meat">
             <div class="menu-content">
-              3 Lobster Tacos
+              Loaded Fries
             </div>
             <div class="menu-ingredients">
-              Fresh grilled lobster topped with cabbage/pico de gallo mix on corn tortillas
+              Your choice of meat with beans, Spanish rice, cheese, fresh-cut onions, and cilantro in a bowl
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-tacos">
-            <img src="img/menu/3-fish-tacos.png" class="menu-img" alt="">
-            <div class="menu-content">
-              3 Fish Tacos
-            </div>
-            <div class="menu-ingredients">
-              Fish topped with cabbage/pico de gallo mix on corn tortillas  
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-tacos">
-            <img src="img/menu/keto-tacos.png" class="menu-img" alt="">
-            <div class="menu-content">
-              Keto Tacos
-            </div>
-            <div class="menu-ingredients">
-                
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-burritos">
-            <img src="img/menu/burrito.png" class="menu-img" alt="">
+          
+          <div class="col-lg-3 col-md-6 menu-item filter-burritos">
+            <img src="/img/menu-img/04-burrito.png" class="menu-img" alt="Burrito with choice of meat">
             <div class="menu-content">
               Burrito
             </div>
             <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken, or al pastor (marinated sweet pork) with beans, spanish rice, cheese, onion, and cilantro in a flour tortilla
+              Your choice of meat with beans, Spanish rice, cheese, fresh-cut onions, and cilantro wrapped in a flour tortilla
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-burritos">
-            <img src="img/menu/cali-burrito.png" class="menu-img" alt="">
-            <div class="menu-content">
-              California Burrito
-            </div>
-            <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken, or al pastor (marinated sweet pork) with golden french fries, beans, spanish rice, cheese, onion, and cilantro in a flour tortilla
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-bowls">
-            <img src="img/menu/burrito-bowl.png" class="menu-img" alt="">
+          
+          <div class="col-lg-3 col-md-6 menu-item filter-bowls">
+            <img src="/img/menu-img/05-burrito-bowl.png" class="menu-img" alt="Quesadilla with choice of meat">
             <div class="menu-content">
               Burrito Bowl
             </div>
             <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken, or al pastor (marinated sweet pork) with beans, spanish rice, cheese, onion, and cilantro in a bowl
+              Your choice of meat grilled with cheese in a flour tortilla
             </div>
           </div>
-
-          <div class="col-lg-6 menu-item filter-bowls">
-            <img src="img/menu/taco-bowl.png" class="menu-img" alt="">
-            <div class="menu-content">
-              Taco Bowl
-            </div>
-            <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken, or al pastor (marinated sweet pork) with beans, cabbage, cheese, onion, and cilantro in a bowl
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-nachos">
-            <img src="img/menu/lobster-nachos.png" class="menu-img" alt="">
-            <div class="menu-content">
-              Lobster Nachos
-            </div>
-            <div class="menu-ingredients">
-              Fresh grilled lobster topped with Q’s four cheese blend, creamy cilantro avocado sauce (no spice) and pico de gallo on a bed of chips
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-nachos">
-            <img src="img/menu/nachos.png" class="menu-img" alt="">
-            <div class="menu-content">
-              Q's Loaded Nachos
-            </div>
-            <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken or al pastor (marinated sweet pork) with Q’s four cheese blend, beans, fresh pico de gallo and creamy cilantro avocado sauce (no spice) on a bed of chips
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-fries">
-            <img src="img/menu/loaded-french-fries.png" class="menu-img" alt="">
-            <div class="menu-content">
-              Loaded French Fries
-            </div>
-            <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken or al pastor (marinated sweet pork) with Q’s four cheese blend, beans, fresh pico de gallo, and creamy cilantro avocado sauce (no spice) on lightly salted golden french fries
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-fries">
-            <img src="img/menu/regular-french-fries.png" class="menu-img" alt="">
-            <div class="menu-content">
-              Regular French Fries
-            </div>
-            <div class="menu-ingredients">
-              Lightly salted golden french fries
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-other">
-            <img src="img/menu/quesadilla.png" class="menu-img" alt="">
+          
+          <div class="col-lg-3 col-md-6 menu-item filter-quesadilla">
+            <img src="/img/menu-img/06-quesadilla.png" class="menu-img" alt="Taco bowl with choice of meat">
             <div class="menu-content">
               Quesadilla
             </div>
             <div class="menu-ingredients">
-              Your choice of steak angus, seasoned chicken, or al pastor (marinated sweet pork) grilled with cheese
+              Your choice of meat with cabbage, beans, cheese, fresh-cut onions, and cilantro in a bowl
             </div>
           </div>
-            
-            <div class="col-lg-6 menu-item filter-other">
-              <img src="img/menu/salsa-options.png" class="menu-img" alt="">
-              <div class="menu-content">
-                Salsa Options
-              </div>
-              <div class="menu-ingredients">
-                Red salsa (hot spice), green salsa (medium spice), or avocado sauce (no spice)
-              </div>
-            </div>
 
-          
-        <!-- Menu Disclaimer -->
+          <div class="col-lg-3 col-md-6 menu-item filter-bowls">
+            <img src="/img/menu-img/07-taco-bowl.png" class="menu-img" alt="Taco bowl with choice of meat">
+            <div class="menu-content">
+              Taco Bowl
+            </div>
+            <div class="menu-ingredients">
+              Your choice of meat with cabbage, beans, cheese, fresh-cut onions, and cilantro in a bowl
+            </div>
+          </div>
 
         </div>
         <div class="container ecmt-8">
           <div class="row justify-content-center">
-            <p class="col-lg-6 text-center">
-              All prices do not include tax 
+            <p class="col-lg-8 ecp-4 text-center">
+              <!-- All prices do not include tax  -->
               Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your chance of foodborne illnesses
             </p>
           </div>
         </div>
       </div>
+    </section>
 
-      <section id="menu-bottom" class="menu section-bg">
+       <!-- START -- instafeed -->
+       <section id="about" class="about dsbc">
         <div class="container" data-aos="fade-up">
-          <div class="row menu-container-1" >
-
-            <div class="col-lg-6 menu-item">
-              <img src="img/menu/churros.png" class="menu-img" alt="">
-              <div class="menu-content ecmt-5">
-                <a href="#">Churro</a><span class="qs-prices">$0</span>
+          <div class="row ecmb-8 ecmb-m-0">
+            <div class="col-lg-6 section-title">
+              <h2>Instagram</h2>
+              <p>Stay up to date with our feed!</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-end">
+              <a href="https://www.instagram.com/qstacos/" target="_blank"><button class="btn-primary"><i class="align-items-center fa-brands fa-instagram"></i> Follow us!</button></a>
+            </div>
+            </div>
+            
+          <!-- Instagram Feed -->
+          <div class="row d-flex">
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-01.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-01.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
               </div>
             </div>
-
-            <div class="col-lg-6 menu-item">
-              <img src="img/menu/Drinks.png" class="menu-img" alt="">
-              <div class="menu-content ecmt-5">
-                <a href="#">Soda And Water</a><span class="qs-prices">$0</span>
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-02.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
               </div>
             </div>
-
-            <div class="col-lg-6 menu-item">
-              <img src="img/menu/no-image.png" class="menu-img" alt="">
-              <div class="menu-content">
-                Vegan Options
-              </div>
-              <div class="menu-ingredients">
-                Soy Chorizo or Beans
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-03.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-03.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
               </div>
             </div>
-
-            <div class="col-lg-6 menu-item">
-              <img src="img/menu/no-image.png" class="menu-img" alt="">
-              <div class="menu-content">
-                Glutten Free Option
-              </div>
-              <div class="menu-ingredients">
-                Corn Tortilla
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-04.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-04.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
               </div>
             </div>
-
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-05.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-05.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-06.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-06.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-07.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-07.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 instagram-item">
+              <div class="gallery-item">
+                <a href="img/instagram-gallery/instagram-08.png" class="venobox" data-gall="instagram-gallery">
+                  <img src="img/instagram-gallery/instagram-08.png" alt="QsTacos Instagram" class="img-fluid">
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-
-    </section><!-- End Menu Section -->
+          <!-- End Instagram Feed -->
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <!-- <section id="gallery" class="gallery dsbc ecp-0 ecpt-16">
 
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -510,70 +402,70 @@
         </div>
       </div>
 
-      <div class="" data-aos="fade-up" data-aos-delay="100">
+      <div class="ecmt-8" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row no-gutters">
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-1.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-1.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-2.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-2.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-3.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-3.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-4.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-4.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-5.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-5.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-6.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-6.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-7.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-7.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/gallery/gallery-img-8.png" class="venobox" data-gall="gallery-item">
-                <img src="img/gallery/gallery-img-8.png" alt="" class="img-fluid">
+              <a href="img/instagram-gallery/instagram-02.png" class="venobox" data-gall="gallery-item">
+                <img class="" src="img/instagram-gallery/instagram-02.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -581,7 +473,9 @@
         </div>
 
       </div>
-    </section><!-- End Gallery Section -->
+    </section> -->
+    
+    <!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -589,7 +483,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Contact Us</p>
+          <p class="ecmb-8">Reach out if you have any questions!</p>
         </div>
       </div>
 
@@ -597,9 +491,9 @@
         <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d135600.21174491773!2d-117.17542628966783!3d33.561684847231746!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1719891284768!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
       </div>
 
-      <div class="container" data-aos="fade-up">
+      <div id="get-estimate" class="container" data-aos="fade-up">
 
-        <div class="row mt-5">
+        <div class="row ecpt-20">
 
           <div class="col-lg-4">
             <div class="info">
@@ -636,7 +530,7 @@
           </div>
         
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+          <div class="col-lg-8 ecmt-8">
           <!-- Form hidden -->
           <div id="form-message-loction" class="form-row">
                     </div>
@@ -649,7 +543,7 @@
                           
                           <!-- Form Script -->
                           
-                          <!-- <?php 
+                          <?php 
                           $Msg = "";
                           if(isset($_GET['error']))
                           {
@@ -663,11 +557,11 @@
                               echo '<div class="alert alert-success">'.$Msg.'</div>';
                           }
                       
-                          ?> -->
+                          ?>
 
                           <!-- Form Script -->
 
-                          <button class="btn-primary btn btn-success g-recaptcha" name="btn-send" type="submit"
+                          <button class="btn-primary g-recaptcha" name="btn-send" type="submit"
                           data-sitekey="reCAPTCHA_site_key" 
                           data-callback='onSubmit' 
                           data-action='submit'> Send </button>
@@ -678,7 +572,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
+    <div class="footer-top dsbc">
       <div class="container">
         <div class="row">
           <div class="container">
@@ -686,7 +580,7 @@
               <h3>
                 Follow Us!
               </h3>
-              <div class="social-links mt-3">
+              <div class="social-links mt-3 dsbc">
                 <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
                 <a href="https://www.facebook.com/qstacosfoodtruck/" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/qstacos/" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -736,14 +630,30 @@
 </body>
 
 <script> 
-  function onClick(e) {
-    e.preventDefault();
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LeBOFgaAAAAAFjVHoAZHcGChPYZuiVBT8Ee60iJ', {action: 'submit'}).then(function(token) {
-          // Add your logic to submit to your backend server here.
-      });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterItems = document.querySelectorAll('#menu-flters li');
+    const menuContainer = document.querySelector('.menu-container');
+    const offset = 300; // Adjust this value to the height of your nav or the desired offset
+
+    filterItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Your filtering logic goes here (e.g., filtering menu items)
+
+            // Calculate the position to scroll to with the offset
+            const elementPosition = menuContainer.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+            // Scroll to the adjusted position
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
     });
-  }
+});
+
+  
 </script>
 
 </html>
