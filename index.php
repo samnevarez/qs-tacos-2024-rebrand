@@ -49,9 +49,6 @@
   <!-- Template Main CSS File -->
   <script src="https://www.google.com/recaptcha/api.js?render=6LeBOFgaAAAAAFjVHoAZHcGChPYZuiVBT8Ee60iJ"></script>
 
-  <!--Base CSS Files -->
-  <link rel="stylesheet" href="/css/01-base.all.css">
-
 <!-- favicon SVG -->
 <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
 <!-- favicon PNG -->
@@ -77,6 +74,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+<!--Base CSS Files -->
+<link rel="stylesheet" href="/css/01-base.all.css">
+
 <!-- Jquery easing -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -85,16 +85,16 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top dsbc d-flex justify-content-between align-items-center">
-    <div class="container ecmx-m-0 d-flex justify-content-between align-items-center">
+  <header id="header" class="fixed-top dsbc">
+    <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="#header" class="scrollto"><img src="img/qstacos-emblem.png" alt=""></a></h1>
+      <h1 class="logo mr-auto"><a href="/"><img src="img/qstacos-emblem.png" alt=""></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header" style="display: none;">Home</a></li>
+          <li class="active"><a href="#header">Home</a></li>
           <li><a class="menu-nav-item" href="#about">About</a></li>
           <li><a class="menu-nav-item" href="#menu">Menu</a></li>
           <li><a class="menu-nav-item" href="#why-us">Catering</a></li>
@@ -203,7 +203,7 @@
             </p>
 
             <div class="d-block ecpy-16">
-              <a class="menu-nav-item btn-primary scrollto" href="#get-estimate">Get Estimate!</a>
+              <a class="menu-nav-item btn-primary" href="#get-estimate">Get Estimate!</a>
             </div>
           </div>
 
@@ -428,6 +428,7 @@
           <!-- End Instagram Feed -->
 
     <!-- ======= Gallery Section ======= -->
+     
     <!-- <section id="gallery" class="gallery dsbc ecp-0 ecpt-16">
 
       <div class="container" data-aos="fade-up">

@@ -17,6 +17,144 @@ a:hover {
   text-decoration: none;
 }
 
+.dsbc {
+  background: $dark-prim-10d !important;
+  color: $white !important;
+
+  h1, h2, h3, h4, h5, h6 {
+      color: $white !important;
+  }
+
+  p {
+      color: $white !important;
+  }
+}
+
+.lsbc {
+  background: $white !important;
+  color: $black !important;
+
+  h1, h2, h3, h4, h5, h6 {
+      color: $black !important;
+  }
+  p {
+      color: $black !important;
+  }
+}
+
+.dstc {
+  color: $dark-interactive-prim-base;
+}
+
+.lstc {
+  color: $light-interactive-prim-base;
+}
+
+// Buttons //
+
+.btn-primary {
+  min-width: 190px;
+  max-width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: $light-prim-base;
+  border: 2px solid $light-prim-10d;
+  color: $black !important;
+  border-radius: 50px;
+  padding: 12px 16px; /* Remove the top and bottom padding */
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px; /* This should be equal to the desired height */
+  font-weight: bold;
+  box-shadow: 0px 2px 6px 4px #00000015;
+  transition: box-shadow 0.1s ease-in-out;
+  text-align: center;
+
+  &:hover {
+      color: $white !important;
+      background-color: $black !important;
+      border: 2px solid $light-prim-10d;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+      transition: box-shadow 0.1s ease-in-out;
+  }
+
+  &:focus {
+      color: $white !important;
+      background-color: $black !important;
+      border: 2px solid $light-prim-10d;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15) !important;
+      transition: box-shadow 0.1s ease-in-out;
+  }
+  &:active {
+      color: $white !important;
+      background-color: $black !important;
+      border: 2px solid $light-prim-10d !important;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15) !important;
+      transition: box-shadow 0.1s ease-in-out;
+  }
+}
+
+.btn-secondary {
+  min-width: 190px;
+  max-width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: $black;
+  border: 2px solid $dark-sec-10d;
+  color: $dark-interactive-prim-base !important;
+  border-radius: 50px;
+  padding: 12px 16px; /* Remove the top and bottom padding */
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px; /* This should be equal to the desired height */
+  font-weight: bold;
+  box-shadow: 0px 2px 6px 4px #00000015;
+  transition: box-shadow 0.1s ease-in-out;
+  text-align: center;
+
+  &:hover {
+      color: $black !important;
+      background-color: $dark-interactive-prim-base !important;
+      border: 2px solid $dark-interactive-prim-10d;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+      transition: box-shadow 0.1s ease-in-out;
+  }
+
+  &:focus {
+      color: $black !important;
+      background-color: $dark-interactive-prim-base !important;
+      border: 2px solid $dark-interactive-prim-10d;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15) !important;
+      transition: box-shadow 0.1s ease-in-out;
+  }
+  &:active {
+      color: $black !important;
+      background-color: $dark-interactive-prim-base !important;
+      border: 2px solid $dark-interactive-prim-10d;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15) !important;
+      transition: box-shadow 0.1s ease-in-out;
+  }
+}
+
+.fa-instagram {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+
+@media (max-width: 992px) {
+
+  .btn-primary {
+      margin: 32px auto;
+  }
+  
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -69,8 +207,8 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 15px;
-  bottom: 88px;
+  right: 24px;
+  bottom: 32px;
   z-index: 995;
 }
 
@@ -320,8 +458,10 @@ a:hover {
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
+  width: 24px;
+  box-sizing: border-box;
   position: absolute;
-  right: 24px;
+  right: 16px;
   top: 24px;
   z-index: 9998;
   border: 0;
@@ -332,10 +472,13 @@ a:hover {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  padding: 0;
+  display: flex;
+  align-content: center;
 }
 
 .mobile-nav-toggle i {
-  color: $white;
+  color: $dark-interactive-prim-base
 }
 
 .mobile-nav {
@@ -381,12 +524,18 @@ a:hover {
   line-height: 1;
   cursor: pointer;
   text-align: right;
-  color: rgba(255, 255, 255, 0.5);
+  color: $dark-interactive-prim-base !important;
 }
 
 .mobile-nav .mobile-nav-close:hover {
-  color: $white;
+  .icofont-close:before {
+    color: $dark-interactive-prim-base !important;
+    }
 }
+
+  .icofont-close:before {
+    color: $dark-interactive-prim-base !important;
+    }
 
 .mobile-nav .menu-link {
   max-width: 160px;
@@ -491,7 +640,7 @@ a:hover {
 
 #hero:before {
   content: "";
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(202, 202, 202, 0.753));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgb(255 255 255 / .5));
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1792,8 +1941,4 @@ section {
   .instagram-feed {
     grid-template-columns: 1fr;
   }
-}
-
-.grecaptcha-badge {
-  opacity: 0 !important;
 }
